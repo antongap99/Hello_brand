@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const mode = process.env.NODE_ENV === "production" ? "production" : "development";
-const target = mode ===  "development" ? "web" : "browserslist";
+const target = mode === "development" ? "web" : "browserslist";
 const devtool = mode === "development" ? "source-map" : undefined;
 
 
@@ -11,18 +11,18 @@ module.exports = {
     target,
     devtool,
     devServer: {
-        hot: true,
+        hot: true
     },
-    entry: ["@babel/polyfill",'./src/script/script.js'],
+    entry: ["@babel/polyfill", './src/script/script.js'],
     output: {
         filename: '[name][contenthash].js',
-        path: path.resolve(__dirname, 'dist'), 
+        path: path.resolve(__dirname, 'dist'),
         clean: true,
         assetModuleFilename: 'assets/[hash][ext][query]'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
         }),
         new MiniCssExtractPlugin({
             filename: '[name][contenthash].css'
