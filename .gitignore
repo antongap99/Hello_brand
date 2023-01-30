@@ -1,3 +1,9 @@
+# webpack
+dist/
+# vscode
+.vscode/
+# src
+src/
 # Logs
 logs
 *.log
