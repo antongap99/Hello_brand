@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+img,
+svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+
+

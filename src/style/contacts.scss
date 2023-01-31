@@ -1,0 +1,113 @@
+.contacts {
+    padding: 101px 0 40px;
+}
+
+.contact__wrapper {
+    display: flex;
+    gap: 96px;
+    margin-bottom: 50px;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact__item {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+
+    .item__icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #D3B47F;
+    }
+}
+.contact__item:last-child {
+    margin-top: 16px;
+}
+.item__text {
+    .text__prop {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #2E2E2E;
+    }
+
+    .text__value {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2E2E2E;
+    }
+}
+
+.contacts__questions {
+    .question__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 88px;
+        color: #000000;
+        margin-bottom: 38px;
+
+    }
+
+    .question__form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .input__group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+
+        .form__input {
+            width: 320px;
+            height: 80px;
+            border: 1px solid #CCCCCC;
+            padding-left: 15px;
+        }
+
+        .textarea__group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-top: 8px;
+
+            .request__textarea {
+                padding-top: 32px;
+                padding-left: 16px;
+                width: 670px;
+                height: 125px;
+                border: 1px solid #CCCCCC;
+            }
+        }
+
+        .form__btn {
+            width: 270px;
+            height: 100px;
+            background: #3A4574;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+}

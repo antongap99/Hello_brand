@@ -1,0 +1,74 @@
+.Sfeerfoto {
+    position: relative;
+    min-height: 611px;
+
+    .Sfeerfoto__background {
+        position: absolute;
+        width: 100%;
+        height: 605px;
+        background: #3A4574;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.Sfeerfoto__wrapper {
+    padding-top: 84px;
+    margin-bottom: 48px;
+}
+
+.sfeerfoto__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.sfeerfoto__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    max-width: 497px;
+}
+
+.Sfeerfoto__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__wrapper {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.btn__group {
+    align-self: center;
+    justify-self: flex-end;
+    display: flex;
+    gap: 30px;
+    margin-top: -19px;
+
+    .Sfeerfoto__button {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+    }
+
+    .btn__svg {
+        align-items: center;
+    }
+
+    .Sfeerfoto__button-next {
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-slide {
+    width: 970px !important;
+    height: 646px !important;
+}
+
+.swiper{
+    overflow: auto;
+}
