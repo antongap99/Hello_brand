@@ -1,39 +1,54 @@
 .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__icons {
-    display: flex;
-    gap: 25px;
-    padding-top: 10px;
-    padding-right: 5px;
-    .icons__item {
-        width: 48px;
-        height: 48px;
-    }
-    .icons__item {
-        .item__link {
-            display: block;
-            width: 48px;
-            height: 48px;
-        }
-
-        .item__link_fb {
-            background: url('../assets/img/footer/SocialMediaButton3.svg');
-        }
-
-        .item__link_ig {
-            background: url('../assets/img/footer/SocialMediaButton1.svg');
-        }
-
-        .item__link_tg {
-            background: url('../assets/img/footer/SocialMediaButton.svg');
-        }
-
-        .item__link_yt {
-            background: url('../assets/img/footer/SocialMediaButton2.svg');
-        }
+  display: flex;
+  gap: 25px;
+  padding-top: 10px;
+  padding-right: 5px;
+  .icons__item {
+    width: 48px;
+    height: 48px;
+  }
+  .icons__item {
+    .item__link {
+      display: block;
+      width: 48px;
+      height: 48px;
     }
 
+    .item__link_fb {
+      background: url("../assets/img/footer/SocialMediaButton3.svg");
+    }
+
+    .item__link_ig {
+      background: url("../assets/img/footer/SocialMediaButton1.svg");
+    }
+
+    .item__link_tg {
+      background: url("../assets/img/footer/SocialMediaButton.svg");
+    }
+
+    .item__link_yt {
+      background: url("../assets/img/footer/SocialMediaButton2.svg");
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    img {
+      width: 269px;
+      height: 55px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .footer__wrapper {
+    gap: 20px;
+  }
 }

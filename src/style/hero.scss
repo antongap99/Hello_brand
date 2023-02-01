@@ -1,160 +1,185 @@
 .hero {
-    background-image: url('../assets/img/hero_sec/hero-bg.png');
-    background-position: center;
-    height: 901px;
+  background-image: url("../assets/img/hero_sec/hero-bg.png");
+  background-position: center;
+  height: 901px;
 }
 
 .hero__text {
-    padding-top: 264px;
-    margin-bottom: 40px;
+  padding-top: 264px;
+  margin-bottom: 40px;
 
-    .text__open {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        margin-bottom: 24px;
+  .text__open {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-bottom: 24px;
 
-        span {
-            display: inline-block;
-            padding-left: 10px;
-        }
+    span {
+      display: inline-block;
+      padding-left: 10px;
     }
+  }
 
-    .text__title {
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 88px;
-        color: #FFFFFF
-    }
+  .text__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    color: #ffffff;
+  }
 }
 
 .hero__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .hero__btn {
+    width: 270px;
+    height: 100px;
+    background: #3a4574;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .hero__icons {
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .icons__item {
+    .item__link {
+      display: block;
+      width: 48px;
+      height: 48px;
+    }
+
+    .item__link_fb {
+      background: url("../assets/img/hero_sec/SocialMediaButton-3.svg");
+    }
+
+    .item__link_ig {
+      background: url("../assets/img/hero_sec/SocialMediaButton-2.svg");
+    }
+
+    .item__link_tg {
+      background: url("../assets/img/hero_sec/SocialMediaButton-1.svg");
+    }
+
+    .item__link_yt {
+      background: url("../assets/img/hero_sec/SocialMediaButton.svg");
+    }
+  }
+}
+
+@media (max-width: 1171px) {
+  .hero__text {
+    padding-top: 230px;
+    margin-bottom: 30px;
+
+    .text__open {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 18px;
+    }
+
+    .text__title {
+      font-size: 48px;
+    }
+  }
+  .hero__footer {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 
     .hero__btn {
-        width: 270px;
-        height: 100px;
-        background: #3A4574;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-        color: #FFFFFF;
+      width: 270px;
+      height: 100px;
+      background: #3a4574;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
     }
 
     .hero__icons {
-        display: flex;
-        gap: 25px;
+      display: flex;
+      gap: 25px;
     }
-
-    .icons__item {
-        .item__link {
-            display: block;
-            width: 48px;
-            height: 48px;
-        }
-
-        .item__link_fb {
-            background: url('../assets/img/hero_sec/SocialMediaButton-3.svg');
-        }
-
-        .item__link_ig {
-            background: url('../assets/img/hero_sec/SocialMediaButton-2.svg');
-        }
-
-        .item__link_tg {
-            background: url('../assets/img/hero_sec/SocialMediaButton-1.svg');
-        }
-
-        .item__link_yt {
-            background: url('../assets/img/hero_sec/SocialMediaButton.svg');
-        }
-    }
-
-
-}
-
-
-@media (max-width: 1171px) {
-    .hero__text {
-        padding-top: 230px;
-        margin-bottom: 30px;
-    
-        .text__open {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
-            margin-bottom: 18px;
-        }
-    
-        .text__title {
-            font-size: 48px;
-        }
-    }
-    .hero__footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-        .hero__btn {
-            width: 270px;
-            height: 100px;
-            background: #3A4574;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 24px;
-            color: #FFFFFF;
-        }
-    
-        .hero__icons {
-            display: flex;
-            gap: 25px;
-        }
-    }
+  }
 }
 @media (max-width: 909px) {
-    
-    .hero__text {
-        padding-left: 100px;
-        margin-bottom: 30px;
-    
-        .text__open {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            margin-bottom: 18px;
-        }
-    
-        .text__title {
-            font-size: 40px;
-            line-height: 45px;
-        }
+  .hero__text {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+
+    .text__open {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 18px;
     }
+
+    .text__title {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    
+  .hero {
+    height: 700px;
+  }
 }
 
 @media (max-width: 690px) {
-    
-    .hero__text {
-        padding-left: 100px;
-        margin-bottom: 30px;
-    
-        .text__open {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            margin-bottom: 18px;
-        }
-    
-        .text__title {
-            font-size: 30px;
-            line-height: 35px;
-        }
+  .hero__text {
+    padding-top: 338px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+
+    .text__open {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 18px;
     }
+
+    .text__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
 }
+
+@media (max-width: 594px) {
+  .hero__text {
+    padding: 0;
+    padding-top: 300px;
+    max-width: 270px;
+    margin: 0 auto 70px;
+
+    .text__open {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
+
+    .text__title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+  .hero__footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+

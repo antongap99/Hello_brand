@@ -31,6 +31,7 @@
           <div class="phone__icon"></div>
           <div class="phone__number">+32 9 282 57 25</div>
         </div>
+        <button class="header__burger hidden"></button>
       </div>
     </header>
     <main class="main">
@@ -159,7 +160,7 @@
             </div>
             <div class="swiper goede__swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide goede__slide">
+                <div class="goede__slide">
                   <h1 class="goede__title">
                     Goede service, lekker eten, toffe ambiance
                   </h1>
@@ -264,17 +265,42 @@
         </div>
       </section>
       <section class="Sfeerfoto">
-        <div class="wrapper Sfeerfoto__wrapper">
-          <div class="Sfeerfoto__header">
-            <div class="title__wrapper">
-              <h1 class="sfeerfoto__title">Sfeerfoto's</h1>
-              <p class="sfeerfoto__subtitle">
-                De beste manier om de sfeer te ervaren is eens langskomen. In
-                tussentijd hebben we hier alvast wat foto’s voor je klaar.
-              </p>
+        <div class="slider__wrapper">
+          <div class="swiper Sfeerfoto__slider">
+            <div class="Sfeerfoto__header">
+              <div class="title__wrapper">
+                <h1 class="sfeerfoto__title">Sfeerfoto's</h1>
+                <p class="sfeerfoto__subtitle">
+                  De beste manier om de sfeer te ervaren is eens langskomen. In
+                  tussentijd hebben we hier alvast wat foto’s voor je klaar.
+                </p>
+              </div>
+              
             </div>
-            <div class="btn__wrapper">
-              <div class="btn__group">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide Sfeerfoto__slide">
+                <img
+                  class="slider__img"
+                  src="./assets/img/sfeerfoto_sec/photo1.png"
+                  alt="slider__img"
+                />
+              </div>
+              <div class="swiper-slide Sfeerfoto__slide">
+                <img
+                  class="slider__img"
+                  src="./assets/img/sfeerfoto_sec/photo2.png"
+                  alt="slider__img"
+                />
+              </div>
+              <div class="swiper-slide Sfeerfoto__slide">
+                <img
+                  class="slider__img"
+                  src="./assets/img/sfeerfoto_sec/photo3.png"
+                  alt="slider__img"
+                />
+              </div>
+            </div>
+
                 <div class="Sfeerfoto__button Sfeerfoto__button-prev">
                   <svg
                     class="btn__svg slide__btn_left"
@@ -313,34 +339,6 @@
                     />
                   </svg>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider__wrapper">
-          <div class="swiper Sfeerfoto__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide Sfeerfoto__slide">
-                <img
-                  class="slider__img"
-                  src="./assets/img/sfeerfoto_sec/photo1.png"
-                  alt="slider__img"
-                />
-              </div>
-              <div class="swiper-slide Sfeerfoto__slide">
-                <img
-                  class="slider__img"
-                  src="./assets/img/sfeerfoto_sec/photo2.png"
-                  alt="slider__img"
-                />
-              </div>
-              <div class="swiper-slide Sfeerfoto__slide">
-                <img
-                  class="slider__img"
-                  src="./assets/img/sfeerfoto_sec/photo3.png"
-                  alt="slider__img"
-                />
-              </div>
             </div>
           </div>
         </div>
