@@ -1,61 +1,122 @@
 .header {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .header__wrapper {
-    display: flex;
-    align-items: center;
-    padding-top: 56px;
+  display: flex;
+  align-items: center;
+  padding-top: 56px;
 }
 
 .header__logo {
-    display: flex;
-    margin-right: 135px;
-    width: 270px;
-    height: 54px;
+  display: flex;
+  margin-right: 135px;
+  width: 270px;
+  height: 54px;
 }
 
 .header__navgiation {
-    margin-right: 157px;
-    width: 448px;
+  margin-right: 157px;
+  width: 448px;
 }
 
 .navigation__list {
+  display: flex;
+  gap: 43px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  justify-content: space-between;
+
+  .navigation__item {
+    display: block;
+    font-weight: 300;
+    min-width: min-content;
+  }
+
+  .navigation__item:active {
+    font-weight: 500;
+    line-height: 24px;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+}
+
+.header__phone {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 160px;
+
+  .phone__icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/img/icons/phone.svg");
+  }
+}
+
+
+
+@media (max-width: 1171px) {
+    .header__navgiation {
+        margin-right: 140px;
+      }
+}
+@media (max-width: 1165px) {
+  .header__wrapper {
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__navgiation {
+    margin: 0;
+    width: 448px;
+  }
+
+  .navigation__list {
     display: flex;
     gap: 43px;
     font-size: 16px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     justify-content: space-between;
-
-    .navigation__item {
-        display: block;
-        font-weight: 300;
-        min-width: min-content;
-    }
-
-    .navigation__item:active {
-        font-weight: 500;
-        line-height: 24px;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-    }
+  }
 }
 
-.header__phone {
-    display: flex;
-    gap: 11px;
+@media (max-width: 913px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 50px;
+    align-items: center;
     justify-content: center;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    max-width: 160px;
 
-    .phone__icon {
-        width: 24px;
-        height: 24px;
-        background-image: url('../assets/img/icons/phone.svg');
-    }
+  }
+
+  .header__phone {
+    order: 1;
+  }
+  .header__navgiation {
+    order: 2;
+  }
+
+  .navigation__list {
+    display: flex;
+    gap: 43px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    justify-content: space-between;
+  }
 }
