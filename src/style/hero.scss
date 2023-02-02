@@ -13,7 +13,7 @@
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: $white-color;
     margin-bottom: 24px;
 
     span {
@@ -26,7 +26,7 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 88px;
-    color: #ffffff;
+    color: $white-color;
   }
 }
 
@@ -38,11 +38,15 @@
   .hero__btn {
     width: 270px;
     height: 100px;
-    background: #3a4574;
+    background: $background-color;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
+    color: $white-color;
+  }
+  .hero__btn:hover {
+    background: #384062;
+    color: $hover-color;
   }
 
   .hero__icons {
@@ -99,11 +103,11 @@
     .hero__btn {
       width: 270px;
       height: 100px;
-      background: #3a4574;
+      background: $background-color;
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
-      color: #ffffff;
+      color: $white-color;
     }
 
     .hero__icons {

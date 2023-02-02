@@ -52,7 +52,7 @@
       display: inline-block;
       width: 5px;
       height: 5px;
-      background: #d3b47f;
+      background: $hover-color;
     }
   }
 }
@@ -62,7 +62,7 @@
   align-self: flex-end;
   width: 473px;
   height: 506px;
-  border: 2px solid #d3b47f;
+  border: 2px solid $hover-color;
   position: relative;
   .img {
     position: absolute;

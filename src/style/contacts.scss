@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #d3b47f;
+    background: $hover-color;
   }
 }
 .contact__item:last-child {
@@ -79,7 +79,7 @@
     .form__input {
       width: 320px;
       height: 80px;
-      border: 1px solid #cccccc;
+      border: 1px solid $line-color;
       padding-left: 15px;
     }
 
@@ -94,18 +94,18 @@
         padding-left: 16px;
         width: 670px;
         height: 125px;
-        border: 1px solid #cccccc;
+        border: 1px solid $line-color;
       }
     }
 
     .form__btn {
       width: 270px;
       height: 100px;
-      background: #3a4574;
-      font-weight: 500;
+      background: $btn-color;
+      font-weight: 500; 
       font-size: 24px;
       line-height: 24px;
-      color: #ffffff;
+      color: $white-color;
     }
   }
 }
@@ -267,7 +267,7 @@
     .form__input {
       width: 310px;
       height: 53px;
-      border: 1px solid #cccccc;
+      border: 1px solid $line-color;
       padding-left: 11px;
     }
   }

@@ -30,6 +30,14 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+button:hover svg {
+    fill: $hover-color;
+}
+
+button:hover  {
+    color: $hover-color
+}
+
 
 a {
     text-decoration: none;
